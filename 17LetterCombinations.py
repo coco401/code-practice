@@ -10,6 +10,7 @@ KEYBOARD = {'2':['a','b','c'],
            '8':['t','u','v'],
            '9':['w','x','y','z']}
 class Solution:
+    '''ewr'''
     def letterCombinations(self, digits):
         res = []
         #如果digits是空集则返回空
@@ -23,7 +24,10 @@ class Solution:
         else:
             for letter in KEYBOARD[next_digits[0]]:
                 self.dfs(next_digits[1:], combination + letter, res)
-        
+    i = 1
 if __name__ == "__main__":
-    s=Solution.letterCombinations
-    s("1")
+    a=Solution.i
+    a = Solution.__doc__
+    c = Solution()
+    c = c.letterCombinations("22344")
+    print(a)
